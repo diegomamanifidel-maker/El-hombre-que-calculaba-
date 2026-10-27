@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El hombre que calculaba</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <script src="js\script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>El hombre que calculaba</h1>
+    </header>
+
+    <main>
+
+        <!-- PROBLEMA 1 -->
+        <section>
+            <h2>Problema 1: Ecuación cuadrática</h2>
+
+            <p>
+                Ingresa los valores de a, b y c para resolver
+                la ecuación ax² + bx + c = 0.
+                El programa calculará el discriminante y sus raíces reales.
+            </p>
+
+            <form id="formularioEcuacion">
+                <label for="valorA">Valor de a:</label>
+                <input type="number" id="valorA" step="any"
+                       value="" required>
+
+                <label for="valorB">Valor de b:</label>
+                <input type="number" id="valorB" step="any"
+                       value="" required>
+
+                <label for="valorC">Valor de c:</label>
+                <input type="number" id="valorC" step="any"
+                       value="" required>
+
+                <button type="submit">Resolver ecuación</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+            <p id="resultadoEcuacion" class="resultado">Resultado:</p>
+        </section>
+
+        <!-- PROBLEMA 2 -->
+        <section>
+            <h2>Problema 2: Estimación de pi</h2>
+
+            <p>
+                El valor de pi se puede estimar mediante la expresión:
+            </p>
+
+            <p class="formula">
+                π ≈ √(6 × Σ 1/n²), desde n = 1 hasta N
+            </p>
+
+            <p>
+                Escribe un programa que utilice un bucle para calcular
+                la expresión con N = 100, N = 10000 y N = 1000000.
+                Compara los resultados con el valor de pi.
+            </p>
+
+            <form id="formularioPi">
+                <button type="submit">Calcular las tres estimaciones</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+            <p id="resultadoPi" class="resultado">Resultado:</p>
+        </section>
+
+        <!-- PROBLEMA 3 -->
+        <section>
+            <h2>Problema 3: El reparto de los panes</h2>
+
+            <p>
+                Dos viajeros comparten sus panes por igual con un tercer
+                viajero, quien les paga monedas. Calcula cuánto dinero
+                corresponde a cada uno según el pan que aportó.
+            </p>
+
+            <form id="formularioPanes">
+                <label for="pan1">Panes del primer viajero:</label>
+                <input type="number" id="pan1" min="0" step="any"
+                       value="" required>
+
+                <label for="pan2">Panes del segundo viajero:</label>
+                <input type="number" id="pan2" min="0" step="any"
+                       value="" required>
+
+                <label for="monedas">Monedas recibidas:</label>
+                <input type="number" id="monedas" min="0" step="any"
+                       value="" required>
+
+                <button type="submit">Calcular reparto</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+            <p id="resultadoPanes" class="resultado">Resultado:</p>
+        </section>
+
+        <!-- PROBLEMA 4 -->
+        <section>
+            <h2>Problema 4: Ganancia del comerciante</h2>
+
+            <p>
+                Ingresa el costo de cada producto, la cantidad comprada
+                y el precio de venta para calcular el costo total,
+                los ingresos, la ganancia y el porcentaje de ganancia.
+            </p>
+
+            <form id="formularioGanancia">
+                <label for="costo">Costo de cada producto:</label>
+                <input type="number" id="costo" min="0" step="any"
+                       value="" required>
+
+                <label for="cantidad">Cantidad de productos:</label>
+                <input type="number" id="cantidad" min="1" step="1"
+                       value="" required>
+
+                <label for="precioVenta">Precio de venta por producto:</label>
+                <input type="number" id="precioVenta" min="0" step="any"
+                       value="" required>
+
+                <button type="submit">Calcular ganancia</button>
+                <button type="reset">Limpiar</button>
+            </form>
+
+            <p id="resultadoGanancia" class="resultado">Resultado:</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Actividad práctica de Programación Web I</p>
+    </footer>
+
+</body>
+</html>
